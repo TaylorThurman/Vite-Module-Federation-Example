@@ -1,11 +1,9 @@
-import {useState} from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Button from "./Button.jsx";
+import useCount from "./store.js";
 
 function App() {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useCount(0);
 
     return (
         <div className="App">
